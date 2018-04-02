@@ -1,0 +1,3 @@
+moduleName = nullminator
+moduleVersion = 1.0
+extensionClasses = ListNullminatorExtension

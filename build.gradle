@@ -1,0 +1,17 @@
+group 'com.mroodev'
+version '1.0-SNAPSHOT'
+
+apply plugin: 'groovy'
+apply plugin: 'maven'
+
+sourceCompatibility = 1.8
+
+repositories {
+    maven { url "https://repo.grails.org/grails/core" }
+}
+
+dependencies {
+    compile "org.grails:grails-web-common:$grailsVersion"
+    compile "org.codehaus.groovy:groovy-all:2.4.11"
+    testCompile "org.spockframework:spock-core:1.1-groovy-2.4"
+}

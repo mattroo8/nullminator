@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/nullminator.iml" filepath="$PROJECT_DIR$/.idea/modules/nullminator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/nullminator_main.iml" filepath="$PROJECT_DIR$/.idea/modules/nullminator_main.iml" group="nullminator" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/nullminator_test.iml" filepath="$PROJECT_DIR$/.idea/modules/nullminator_test.iml" group="nullminator" />
+    </modules>
+  </component>
+</project>
