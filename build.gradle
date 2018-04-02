@@ -1,17 +1,57 @@
 group 'com.mroodev'
-version '1.0-SNAPSHOT'
+version '1.1'
 
+buildscript {
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7.3'
+    }
+}
+apply plugin: 'com.jfrog.bintray'
 apply plugin: 'groovy'
 apply plugin: 'maven'
+apply plugin: 'maven-publish'
 
 sourceCompatibility = 1.8
 
 repositories {
     maven { url "https://repo.grails.org/grails/core" }
+    maven { url "https://dl.bintray.com/mattroo8/Plugins" }
 }
 
 dependencies {
     compile "org.grails:grails-web-common:$grailsVersion"
     compile "org.codehaus.groovy:groovy-all:2.4.11"
     testCompile "org.spockframework:spock-core:1.1-groovy-2.4"
+}
+
+bintray {
+    user = System.getenv('BINTRAY_USER')
+    key = System.getenv('BINTRAY_KEY')
+    publications = ['MyPublication']
+    pkg {
+        repo = 'Plugins'
+        name = 'nullminator'
+        userOrg = 'mattroo8'
+        vcsUrl = 'https://github.com/bintray/gradle-bintray-plugin.git'
+        licenses = ['Apache-2.0']
+        version {
+            name = '1.1'
+            desc = 'Nullminator 1.1 SNAPSHOT'
+            released  = new Date()
+        }
+    }
+}
+
+publishing {
+    publications {
+        MyPublication(MavenPublication) {
+            from components.java
+            groupId 'com.mroodev'
+            artifactId 'nullminator'
+            version '1.1'
+        }
+    }
 }
