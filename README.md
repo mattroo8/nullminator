@@ -4,7 +4,7 @@ A groovy extension which removes null and "null" from your List types.
 
 ```
 List myList = [null, "null", 'null', "hello"]
-myList = myList.removeAllNulls()
+myList = myList.removeAllTheNulls()
 assert myList.size() == 1​
 ```
 
