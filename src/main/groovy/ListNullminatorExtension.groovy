@@ -6,9 +6,6 @@ class ListNullminatorExtension {
      @return List - The modified list
      */
     static List removeAllTheNulls(final List self){
-        List target = self
-        target = target - null
-        target.removeAll(["null"])
-        return target
+        return self - null - "null"
     }
 }
