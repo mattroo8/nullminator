@@ -1,3 +1,6 @@
+![Build Status](https://travis-ci.org/mattroo8/nullminator.svg?branch=master)
+
+
 # Nullminator
 
 A groovy extension which removes null and "null" from your List types.
