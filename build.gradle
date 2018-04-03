@@ -64,3 +64,5 @@ jacocoTestReport {
         html.destination file("${buildDir}/jacoco/html")
     }
 }
+
+check.dependsOn jacocoTestReport
