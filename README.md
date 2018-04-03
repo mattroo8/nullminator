@@ -17,6 +17,6 @@ repositories {
 }
 
 dependencies {
-    compile 'com.mroodev:nullminator:1.1'
+    compile 'com.mroodev:nullminator:1.0'
 }
 ```

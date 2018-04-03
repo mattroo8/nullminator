@@ -1,5 +1,5 @@
 group 'com.mroodev'
-version '1.1'
+version '1.0'
 
 buildscript {
     repositories {
@@ -38,8 +38,8 @@ bintray {
         vcsUrl = 'https://github.com/bintray/gradle-bintray-plugin.git'
         licenses = ['Apache-2.0']
         version {
-            name = '1.1'
-            desc = 'Nullminator 1.1 SNAPSHOT'
+            name = '1.0'
+            desc = 'Nullminator 1.0 SNAPSHOT'
             released  = new Date()
         }
     }
@@ -51,7 +51,7 @@ publishing {
             from components.java
             groupId 'com.mroodev'
             artifactId 'nullminator'
-            version '1.1'
+            version '1.0'
         }
     }
 }
