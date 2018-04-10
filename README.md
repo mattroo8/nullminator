@@ -11,6 +11,7 @@ myList = myList.removeAllTheNulls()
 assert myList.size() == 1​
 ```
 
+
 ### Gradle
 #### build.gradle
 
