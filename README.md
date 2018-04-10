@@ -1,5 +1,6 @@
 [![Build Status](https://travis-ci.org/mattroo8/nullminator.svg?branch=master)](https://travis-ci.org/mattroo8/nullminator)
 [![codecov](https://codecov.io/gh/mattroo8/nullminator/branch/master/graph/badge.svg)](https://codecov.io/gh/mattroo8/nullminator)
+[ ![Download](https://api.bintray.com/packages/mattroo8/Plugins/nullminator/images/download.svg) ](https://bintray.com/mattroo8/Plugins/nullminator/_latestVersion)
 
 # Nullminator
 
